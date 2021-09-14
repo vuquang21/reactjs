@@ -1,0 +1,155 @@
+html {
+  box-sizing: border-box;
+}
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  *,*:before,*:after {
+  box-sizing: border-box;
+  }
+  input,
+  textarea,
+  select,
+  button{ 
+    outline: none;
+  }
+  input{
+    line-height: normal;
+  }
+  label,
+  button{
+    cursor: pointer;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  :root {
+    --primary: #0A0A23;
+    --secondary: #D0D0D5;
+    --pri__font-family: 'Lato', sans-serif;
+    --second__font-family: 'Roboto mono', monospace
+  }
+  .header-container {
+    background-color: #0A0A23;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+    padding: 0.15rem;
+    font-family: saxMono;
+    position: relative;
+  
+  }
+  i.fab.fa-free-code-camp {
+    position: relative;
+    margin-left: 0.3rem;
+    margin-top: 0.2rem;
+    font-size: 1.9rem;
+  }
+  
+  .button-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 2rem;
+    margin: 1rem 0 1rem 0;
+  }
+  .button {
+    color: var(--primary);
+    background-color: var(--secondary);
+    font-family: var(--second__font-family);
+    width: 600px;
+    font-size: 23px;
+    border: solid 3px;
+    border-color: var(--primary);
+    cursor: pointer;
+    height: 3.4375rem;
+  }
+  
+  .button:hover {
+    background-color: var(--primary);
+    color: white;
+  }
+  
+  .form-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 3rem;
+    
+  }
+  .form-control {
+    width: 37.5rem;
+    font-size: 23px;
+    height: 3.4375rem;
+    position: relative;
+    padding-left: 1.25rem;
+    border: 1px solid;
+    margin-bottom:  1rem;
+  }
+  .form-control:focus {
+    border-color: var(--primary);
+  }
+  ::placeholder {
+    font-family: var(--second__font-family);
+  }
+  .content {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    top: 1rem;
+    position: relative;
+  }
+  .text {
+    position: absolute;
+    font-family: var(--pri__font-family);
+    font-size: 1.23rem;
+    margin-top: 0.5rem;
+  }
+  .content a {
+    color: #1B1B32;
+  }
+  .content a:hover {
+    text-decoration: none;
+    background-color: #DFDFE2;
+  }
+  
+  .crossbar-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    top: 2rem;
+    width: 37.5rem;
+   
+  }
+
+  view.cross {
+    height: 1;
+    background-color: black;
+    width: 28.126rem;
+    position: absolute;
+    border: 2px solid;
+  }
+  
+  .crossbar__title {
+    font-family: var(--second__font-family);
+    text-align: center;
+    font-size: 1.25rem;
+    position: absolute;
+    top: -1rem;  
+    background-color: white;
+    width: 3rem;
+    font-weight: 600;
+  }
+  @media screen and (max-width: 510px) {
+    .crossbar-container {
+      margin-left: -3rem;
+    }
+  }
