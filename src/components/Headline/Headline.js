@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import "../components/Style.css";
+import React from 'react';
+import '../Headline/index.css';
 
 const Headline = () => {
   

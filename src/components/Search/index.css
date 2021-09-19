@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    color: var(--white); 
+    
+}
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button{
+    outline: none;
+}
+input{
+    line-height: normal;
+}
+label,
+button{
+    cursor: pointer;
+}
+li {
+    list-style: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+* a {
+    text-decoration: none;
+}
+:root {
+    --primary: #3A444E;
+    --secondary: #343A40;
+    --purple: #727CF5;
+    --pink: #E0565B;
+    --green: #3F3F1A;
+    --grey: #828682;
+    --yellow: #FEC749;
+    --white: #FAFAFC;
+}
+
+
+/*  Search */
+.search-container {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    justify-items: center;
+    top: 2rem;
+    position: relative;
+    width: 100%;
+}
+input.form-control {
+    width: 45rem;
+    height: 4.5rem;
+    border-radius: 45px;
+    background-color: var(--white);
+    border: 1px solid var(--primary);
+    font-size: 23px;
+    box-shadow: 5px 2px 10px var(--primary);
+    padding-left: 2.25rem;
+}
+
+.btn {
+    border-radius: 45px;
+    cursor: pointer;
+    font-size: 1.125rem;   
+    background-color: var(--pink);
+    color: var(--white);
+    transition: opacity .2s;
+    min-width: 2rem;
+    padding: 0.75rem 2rem;
+}
+.button {
+    display: inline-block;
+}
+.button span {
+    padding-left: 1rem;
+    color: var(--white);
+    justify-content: center;
+}
+
+.search__button{
+    position: absolute;
+    margin-left: 34rem;
+    top: 0.55rem;
+}
+.search__button i {
+    position: relative;
+    left: 2.3rem;
+    top: 0.2rem;
+    user-select: none;
+    pointer-events: none;
+    color: var(--white);
+}
+
+
+button.btn.btn-border:hover {
+    box-shadow: 0px 0px 0px 3px var(--pink);
+    transition: 0.15s;
+}
+.btn:hover {
+    border: 2px solid var(--white);
+    transition: .2s;
+}

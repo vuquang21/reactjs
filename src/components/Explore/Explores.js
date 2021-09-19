@@ -1,6 +1,6 @@
-import React from "react";
-import ExploreItem from "./ExploreItem";
-import '../components/Style.css';
+import React from 'react';
+import ExploreItem from './ExploreItem';
+import './index.css';
 
 const Explores = (props) => {
     const explores = [
@@ -45,17 +45,7 @@ const Explores = (props) => {
             img: "https://airbnb-ish.vercel.app/_next/image?url=%2Fimages%2Fexplore%2F8.jpg&w=128&q=75",
         },
     ];
-    // var rows = [];
-    // for (var i = 0; i < explores.length; i++) {
-    //     rows.push(
-    //         <ExploreItem
-    //             className="explore-item"
-    //             img={explores[i].img}
-    //             time={explores[i].title}
-    //             title={explores[i].time}
-    //         />
-    //     );
-    // }
+    
 
     return (
         <div className="explores">

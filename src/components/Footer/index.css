@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    color: var(--white); 
+    
+}
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button{
+    outline: none;
+}
+input{
+    line-height: normal;
+}
+label,
+button{
+    cursor: pointer;
+}
+li {
+    list-style: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+* a {
+    text-decoration: none;
+}
+:root {
+    --primary: #3A444E;
+    --secondary: #343A40;
+    --purple: #727CF5;
+    --pink: #E0565B;
+    --green: #3F3F1A;
+    --grey: #828682;
+    --yellow: #FEC749;
+    --white: #FAFAFC;
+}
+
+
+
+/* Footer items */
+.footer-item {
+    position: relative;
+
+}
+.footer-item__headline {
+    color: var(--primary);
+    display: flex;
+    flex-flow: column;
+}
+.footer__title ul {
+    display: flex;
+    justify-content: space-around;
+    
+    flex-flow: column;
+}
+.footer-item__headline h5 {
+    font-weight: 700;
+}
+.footer__title ul li {
+    margin-top: 0.5rem;
+}
+
+/* Footer */
+.footer {
+    position: relative;
+    top: 38.5rem;
+    height: 26rem;
+    background-color: #EFEFF5;
+    border-top: 1px solid #CFCFD4;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+} 
+.footer .footer-container .FooterItem  {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-container {
+    display: flex;
+    flex-flow: column;
+}
+
+.footer__dash i {
+    color: black;
+}
+.footer__dash span {
+    color: black;
+}
+
+.footer_dash {
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+    margin-top: 3rem;
+}
+.footer__dash--container {
+    justify-content: center;
+    flex-flow: row;
+    /* margin-top: 3rem; */
+}
+.footer__dash--container:nth-child(1) {
+    margin-left: 3rem;
+}
+.footer__dash--container:last-child {
+    margin-right: 3rem;
+}
+.footer__dash--headline {
+    display: flex;
+    flex-flow: row;
+}

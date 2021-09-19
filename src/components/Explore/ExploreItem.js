@@ -1,5 +1,5 @@
-import React from "react";
-import "../components/Style.css";
+import React from 'react';
+import '../Explore/index.css';
 const ExploreItem = (props) => {
   
   return (

@@ -1,15 +1,16 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Headline from "./components/Headline";
-import Search from "./components/Search";
-import Explores from "./components/Explores";
-import Flexible from "./components/Flexible";
-import Live from "./components/Live";
+import Navbar from "./components/Navbar/Navbar";
+import Headline from "./components/Headline/Headline";
+import Search from "./components/Search/Search";
+import Explores from "./components/Explore/Explores";
+import Flexible from "./components/Flexible/Flexible";
+import Live from "./components/Live/Live";
+import Discover from "./components/Discover/Discover";
+import Hosting from "./components/Hosting/Hosting";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
-  const title = "temp";
-  const url = "https://airbnb-ish.vercel.app/_next/image?url=%2Fimages%2Flive%2F4.jpg&w=256&q=75";
   return (
     <div className="App">
       <div className="Heading--page">
@@ -25,7 +26,15 @@ const App = () => {
       </div>
       <div className="Live--page">
         <Live />
-        {/* <LiveItem title={title} url={url}/> */}
+      </div>
+      <div className="Discover--page">
+        <Discover />
+      </div>
+      <div className="Hosting--page">
+        <Hosting />
+      </div>
+      <div className="Footer--page">
+        <Footer />
       </div>
     </div>
   );

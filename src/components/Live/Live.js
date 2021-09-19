@@ -1,6 +1,6 @@
-import React from "react";
-import LiveItem from "./LiveItem";
-import "../components/Style.css";
+import React from 'react';
+import LiveItem from './LiveItem';
+import '../Live/index.css';
 
 const Live = () => {
   const liveItems = [
@@ -24,14 +24,8 @@ const Live = () => {
   return (
     <>
       <div className="live">
-        <div className="live__headline">
-          <h2 style={{color: "black"}}>Live anywhere</h2>
-        </div>
         <div className="live-container">
-          <LiveItem className="LiveItem" title={liveItems[0].title} url={liveItems[0].url} />
-          <LiveItem className="LiveItem" title={liveItems[1].title} url={liveItems[1].url} />
-          <LiveItem className="LiveItem" title={liveItems[2].title} url={liveItems[2].url} />
-          <LiveItem className="LiveItem" title={liveItems[3].title} url={liveItems[3].url} />
+          <LiveItem />
         </div>
       </div>
     </>

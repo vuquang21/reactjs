@@ -48,48 +48,49 @@ img {
 
 
 
-
-
-
-/* Hosting */
-.hosting {
+/*  Discover Item  */
+.discover-item {
     position: relative;
-    top: 35rem;
-}
-.hosting-container {
+    top: 3rem;
     display: flex;
-    justify-content: center;
+    flex-flow: column;
 }
-.hosting img {
-    width: 75rem;
-    height: 26.875rem;
-    border-radius: 15px;
-    box-shadow: 0 1px 10px 0 var(--primary);
-}
-.hosting__headline {
-    position: absolute;
-    top: 7rem;
-    margin-left: 13rem;
-}
-.hosting__headline p {
-    margin-top: 2.625rem;
-    margin-bottom: 1.875rem;
-}
-.hosting__headline h2 {
-    font-weight: 800;
-}
-.hosting__headline .btn {
-    margin-bottom: -4.725rem;
-    background-color: var(--white);
-    border-radius: 15px;
-    width: 10rem;
-    height: 3.75rem;
+.discover-item-container {
+    display: flex;
+    flex-flow: column;
+    position: relative;
     color: var(--secondary);
+}
+.discover-item-container h4 {
     font-weight: 700;
 }
-.hosting button.btn.btn-light.btn-border:hover {
-    box-shadow: 0 0 0 2.5px var(--white);
-    transition: 0.15s;
-    border: 2.5px solid var(--primary);
-   
+.discover-item img {
+    width: 23.75rem;
+    height: 23.75rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 10px 0 var(--primary);
+}
+.discover-item:hover img {
+    transform: scale(0.95);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/* Discover */
+
+.discover {
+    position: relative;
+    top: 30rem;
+    margin-top: 7rem;
+}
+.discover-container h1 {
+    margin-top: 2rem;
+    margin-left: 7rem;
+    font-weight: 800;
+}
+.DiscoverItem {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
