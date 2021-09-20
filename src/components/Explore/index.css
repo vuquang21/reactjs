@@ -52,9 +52,10 @@ img {
     justify-content: flex-start;
     position: relative;
     padding-left: 0.625rem;
+    gap: 2rem;
     width: 17.5rem;
     height: 5.625rem;
-    top: 23rem;
+    top: 25rem;
     margin-top: 1rem;
 }
 img.explore__img {
@@ -63,11 +64,10 @@ img.explore__img {
     width: 90px;
     height: 90px;
     border-radius: 1.2rem;
-    box-shadow: 0px 1px 10px 0px var(--primary);
+    box-shadow: 0px 1px 5px 0px var(--primary);
     border: none;
 }
 .explore__describe {
-    margin-left: 1rem;
     margin-top: 1rem;
 }
 .explore__describe {
@@ -76,7 +76,8 @@ img.explore__img {
 }
 
 .explore-container:hover {
-    background-color: aliceblue;
+    background-color: rgb(213, 234, 253);
+    /* background-color: #FEFEFF; */
     border-radius: 1.2rem;
     transition: 0.3s;
     color: var(--white);
@@ -92,7 +93,7 @@ img.explore__img {
 /*  Explores */
 .explores {
     position: relative;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
 }
 .explore__items {     
     position: relative; 
@@ -102,7 +103,7 @@ img.explore__img {
 .explores  h2 {
     position: absolute;
     color: var(--secondary);
-    margin-top: 18rem;
+    margin-top: 22rem;
     margin-bottom: 3rem;
     transform: translate(70%,-50%);
     font-weight: 800;

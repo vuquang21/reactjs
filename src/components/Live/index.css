@@ -58,11 +58,13 @@ img {
 }
 .live-item--container ul {
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 .live-item--container ul li {
     list-style: none;
     justify-content: space-between;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 .live-item--container ul li a {
     color: var(--primary);
@@ -80,7 +82,7 @@ img {
 }
 .live-item h2 {
     margin-bottom: 3rem;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     font-weight: 800;
 }
 .live-item--container ul:hover li {

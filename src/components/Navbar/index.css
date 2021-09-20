@@ -45,7 +45,7 @@ img {
 }
 /* navbar */
 .navbar {
-    position: relative;
+    position: fixed;
 }
 .navbar-container {
     left: 0;
@@ -53,11 +53,22 @@ img {
     top: 0;
     display: flex;
     width: 100%;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
 }
 .navbar-container:nth-child(1) {
     margin-left: 8rem;
 }
+/* .navbar__logo h3 {
+    color: var(--white);
+    font-weight: 600;
+    padding-left: 0.5rem;
+} */
+h3.navbar__logo {
+    color: var(--white);
+    font-weight: 600;
+    padding-left: 0.5rem;
+}
+
 .navbar-container .navbar__items {
     margin-left: 17rem;
     display: flex;
@@ -65,13 +76,15 @@ img {
     gap: 40px;
 }
 
-.navbar-container .navbar__profile {
-    margin-left: 6rem;
+.navbar__profile  {
+    margin-left: 5.5rem;
     font-size: 1.125rem;
+
+}
+.navbar__profile--host {
     display: flex;
     gap: 20px;
 }
-
 
 .navbar-container a {
     text-decoration: none;
@@ -79,16 +92,8 @@ img {
 }
 
 
-.profile {
-    font-size: 1.125rem;
-    margin-right: 16.5rem;
-    box-sizing: border-box;
-    
-}
-.profile a {
-    float: left;
-    margin-right: 1.5rem;
-} 
+
+
 .navbar__profile--user {
     position: absolute;
     margin-left: 14.5rem;
@@ -96,7 +101,7 @@ img {
     border-radius: 45px;
     width: 5rem;
     height: 2.3rem;
-    top: 2.5rem;
+    top: 1.5rem;
     background-color: var(--white);
 }
 .navbar__profile--user i {
@@ -129,7 +134,7 @@ img {
 .navbar__items .item::before {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: 0.8rem;
 
     width: 5%;
     height: 0.175rem;
@@ -140,10 +145,10 @@ img {
     transition: transform ease 0.25s;
 }
 .navbar__items .item.e--1::before {
-    margin-left: 1rem;
+    margin-left: 1.4rem;
 } 
 .navbar__items .item.e--2::before {
-    margin-left: 0.5rem;
+    margin-left: 1rem;
 } 
 .navbar__items .item.e--3::before {
     margin-left: 2.4rem;
@@ -165,24 +170,19 @@ img {
 
 
 
-
-
-
 .navbar.active {
-    display: flex;
-    padding-top: 2.5rem;
-    justify-content: space-between;
-    justify-items: flex-start;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
     background-color: var(--white);
-    color: var(--secondary);
-}
-.active {
-    background-color: var(--white);
-    color: var(--secondary);
     z-index: 999;
     opacity: 1;
+}
+.change-color {
+    color: var(--primary) !important;
+}
+
+.hiden {
+    opacity: 0;
+    visibility: hidden;
+    /* transition: all 0.2s ease; */
+    
 }

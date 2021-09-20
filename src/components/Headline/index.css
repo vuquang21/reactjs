@@ -51,7 +51,7 @@ img {
 .headline-container {
     display: flex;
     position: relative;
-    top: 6rem;
+    top: 10rem;
     padding-left: 9.7rem;   
     position: relative;    
     z-index: 1;

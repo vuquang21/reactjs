@@ -5,6 +5,7 @@ import Button from '../Button';
 
 const Search = (props) => {
     const title = 'Search';
+    
     return (
         <div className="search-container">
             <input class="form-control" type="text" placeholder="Where are you going?" />

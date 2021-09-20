@@ -14,16 +14,18 @@ const Navbar = () => {
   };
   window.addEventListener("scroll", changeBackground);
 
+
+
   return (
-    <div className="navbar">
+    <div className={navbar ? '' : 'navbar'}>
       <div className="navbar-container">
-        <div className="navbar__logo">
-          <a href="#" style={{color: 'white'}}><h3>Pobdev</h3></a>
+        <div>
+          <a href="#"><h3 className={navbar ? 'navbar__logo change-color' : 'navbar__logo'}>Pobdev</h3></a>
         </div>
 
-        <div className="navbar__items">
+        <div className={navbar ? 'hiden' : 'navbar__items'}>
           <a href="#">
-            <span className="item e--1">Places to stay</span>
+            <span className="item active e--1 ">Places to stay</span>
           </a>
           <a href="#">
             <span className="item e--2">Experiences</span>
@@ -34,16 +36,18 @@ const Navbar = () => {
         </div>
 
         <div className="navbar__profile">
-          <a href="#">
-            <span>Become a host</span>
-          </a>
-          <a href="#">
-            <i class="far fa-moon"></i>
-          </a>
-          <a href="#">
-            <i class="fa fa-globe"></i>
-          </a>
-          <div className="navbar__profile--user">
+          <div className={navbar ? 'navbar__profile--host change-color' : 'navbar__profile--host'}>
+            <a href="#">
+              <span className={navbar ? 'change-color' : ''}>Become a host</span>
+            </a>
+            <a href="#">
+              <i class="far fa-moon" />
+            </a>
+            <a href="#">
+              <i class="fa fa-globe" />
+            </a>
+          </div>
+          <div className={navbar ? 'navbar__profile--user change-color' : 'navbar__profile--user'}>
             <i class="fa fa-bars" aria-hidden="true"></i>
             <i class="far fa-user" aria-hidden="true"></i>
           </div>

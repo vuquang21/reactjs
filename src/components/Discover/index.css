@@ -82,11 +82,11 @@ img {
 .discover {
     position: relative;
     top: 30rem;
-    margin-top: 7rem;
+    margin-top: 5rem;
 }
 .discover-container h1 {
     margin-top: 2rem;
-    margin-left: 7rem;
+    margin-left: 10rem;
     font-weight: 800;
 }
 .DiscoverItem {

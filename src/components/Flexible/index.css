@@ -63,6 +63,7 @@ img {
     border-radius: 15px;
     color: var(--green);
     padding-left: 3.4375rem;
+    margin: 0;
 }
 .flexible-container h1 {
     font-weight: 900;
